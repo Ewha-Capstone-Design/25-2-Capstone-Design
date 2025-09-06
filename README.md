@@ -23,7 +23,8 @@
 
 ## 📂 Project Structure
 
-📦 
+```
+📦 25-2-Capstone-Design
 ├─ README.md
 ├─ backend
 │  └─ .gitkeep
@@ -32,3 +33,4 @@
 │  └─ Ideation.md
 └─ frontend
    └─ .gitkeep
+```
