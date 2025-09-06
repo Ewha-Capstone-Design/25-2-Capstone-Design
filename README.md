@@ -23,8 +23,12 @@
 
 ## 📂 Project Structure
 
-project-root/
-├── backend/ # 서버
-├── frontend/ # 클라이언트
-├── docs/ # 문서 (회의록, API 명세 등)
-└──README.md
+📦 
+├─ README.md
+├─ backend
+│  └─ .gitkeep
+├─ docs
+│  ├─ GroundRule.md
+│  └─ Ideation.md
+└─ frontend
+   └─ .gitkeep
