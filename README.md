@@ -25,12 +25,10 @@
 
 ```
 📦 25-2-Capstone-Design
-├─ README.md
-├─ backend
-│  └─ .gitkeep
-├─ docs
-│  ├─ GroundRule.md
-│  └─ Ideation.md
-└─ frontend
-   └─ .gitkeep
+├── Ideation.md
+├── README.md
+├── backend
+├── docs
+│   └── GroundRule.md
+└── frontend
 ```
