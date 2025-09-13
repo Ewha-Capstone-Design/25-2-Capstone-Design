@@ -2,9 +2,9 @@
 
 ## 👩‍💻 Team Members
 
-- 김민주 (이화여자대학교 컴퓨터공학과 2271071) - Backend, DevOps, LLM Engineering
+- 김민주 (이화여자대학교 컴퓨터공학과 2271071) - Product Management, Backend, LLM Engineering
 - 유서연 (이화여자대학교 컴퓨터공학과 2276202) - Frontend, Data Visualization
-- 이윤서 (이화여자대학교 컴퓨터공학과 2271049) - AI (CV/NLP), Frontend
+- 이윤서 (이화여자대학교 컴퓨터공학과 2271049) - DevOps, AI (CV/NLP), Frontend
 
 ---
 
