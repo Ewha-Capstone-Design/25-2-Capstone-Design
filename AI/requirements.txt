@@ -1,0 +1,9 @@
+numpy
+scipy
+librosa
+soundfile
+torch
+torchaudio
+speechbrain
+faiss-cpu
+tqdm
