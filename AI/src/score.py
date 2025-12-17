@@ -36,7 +36,7 @@ def sim_pitch(u: dict, s: dict) -> float:
     q = min(u["voiced_ratio"], s["voiced_ratio"])
     return 0.4*a + 0.4*b + 0.2*c * q
 
-def segment_score(u_emb, u_pitch, s_emb, s_pitch, w_e=0.75, w_p=0.25):
+def segment_score(u_emb, u_pitch, s_emb, s_pitch, w_e=0.35, w_p=0.65):
     se = sim_ecapa(u_emb, s_emb)
     sp = sim_pitch(u_pitch, s_pitch)
     return w_e * se + w_p * sp, se, sp
