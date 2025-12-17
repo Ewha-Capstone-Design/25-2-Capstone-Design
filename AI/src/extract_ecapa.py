@@ -4,6 +4,14 @@ import torchaudio
 from speechbrain.inference import EncoderClassifier
 from pathlib import Path
 
+# --- [긴급 패치] Torchaudio 2.9+ 호환성 문제 해결 ---
+# speechbrain이 옛날 함수(list_audio_backends)를 찾을 때 에러가 나지 않도록 가짜 함수를 넣어줌
+if not hasattr(torchaudio, "list_audio_backends"):
+    def _shim_list_audio_backends():
+        return ["soundfile"]  # 윈도우에서 기본으로 쓰는 백엔드
+    torchaudio.list_audio_backends = _shim_list_audio_backends
+# ------------------------------------------------
+
 classifier = EncoderClassifier.from_hparams(
     source="speechbrain/spkrec-ecapa-voxceleb",
     run_opts={"device": "cpu"}
