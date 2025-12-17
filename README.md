@@ -21,7 +21,7 @@ Voice2Song는 ML 이론은 이해했지만 실습/코딩 경험이 부족한 사
 
 | 디렉터리 | 설명 |
 | --- | --- |
-| `AI/` | 음원 전처리, 세그먼트→ECAPA/Pitch 추출, 추천/개인화 파이프라인 (자체 README 포함) |
+| `AI/` | 음원 전처리, 세그먼트→ECAPA/Pitch 추출, 추천/개인화 파이프라인  |
 | `frontend/` | React + TypeScript 기반 UI (블록형/웹 오디오 녹음) |
 | `backend/` | FastAPI + Spring Boot API (모델 실행, USER profile 관리) |
 | `docs/` | Ground rule/기획자료 |
@@ -38,21 +38,19 @@ Voice2Song는 ML 이론은 이해했지만 실습/코딩 경험이 부족한 사
 
 - **필수 패키지 설치:** AI 서브모듈로 이동하여 `python -m pip install -r AI/requirements.txt` 실행  
 - **데이터 준비:** `AI/data/songs_vocal/`에 음원, `AI/data/user/`에 유저 녹음을 두거나 `AI/src/preprocess_user.py`로 30초 샘플을 녹음  
-- **전처리 및 특징 추출:**  
+- **전처리 및 특징 추출:** 
   ```bash
   python AI/src/preprocess.py
   python AI/src/build_features.py
   ```
-- **추천 실행:**  
+- **추천 실행:**  (유저의 목소리 기반 추천)
   ```bash
   python AI/src/recommend_user.py data/user/user_record_*.m4a
   ```
-- **개인화 시연:**  
+- **개인화 시연:**  (like, dislike 반영된 개인화 추천)
   ```bash
   python AI/src/run_personalization.py
   ```
-
-\> 
 
 
 ## 핵심 기능
