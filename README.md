@@ -23,14 +23,14 @@ Voice2Song는 딥러닝 기반 유저의 보컬과 어울리는 노래를 찾아
 | 디렉터리 | 설명 |
 | --- | --- |
 | `AI/` | 음원 전처리, 세그먼트→ECAPA/Pitch 추출, 추천/개인화 파이프라인  |
-| `frontend/` | React + TypeScript 기반 UI (블록형/웹 오디오 녹음) |
-| `backend/` | FastAPI + Spring Boot API (모델 실행, USER profile 관리) |
+| `frontend/` | React + TypeScript 기반 UI  |
+| `backend/` | Spring Boot API  |
 | `docs/` | Ground rule/기획자료 |
 
 ## 기술 스택
 
 - **Frontend:** React, TypeScript, Web Audio API, describe_timbre 템플릿
-- **Backend:** Python 3.14 (FastAPI) + Spring Boot, PostgreSQL, Redis, Celery-style job handling
+- **Backend:** Spring Boot, PostgreSQL, Redis, Celery-style job handling
 - **AI/ML:** PyTorch, SpeechBrain ECAPA-TDNN, Librosa PYIN, FAISS, score.py hybrid scoring
 - **Audio tooling:** FFmpeg, Demucs, sounddevice, soundfile
 - **Infra:** Docker, Docker Compose, AWS (EC2/Nginx), GPT API for feedback
